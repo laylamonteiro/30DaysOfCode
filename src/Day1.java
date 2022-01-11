@@ -13,21 +13,32 @@ public class Day1 {
         int anotherInt ;
         double anotherDouble;
         String anotherString = null;
+
         /* Read and save an integer, double, and String to your variables.*/
+        System.out.println("Integer: ");
         anotherInt = scan.nextInt();
+
+        System.out.println("Double: ");
         anotherDouble = scan.nextDouble();
+
         scan.nextLine();
+
+        System.out.println("String: ");
         anotherString = scan.nextLine();
+
         // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
 
         /* Print the sum of both integer variables on a new line. */
         System.out.println(i + anotherInt);
+
         /* Print the sum of the double variables on a new line. */
         System.out.println(d + anotherDouble);
+
         /* Concatenate and print the String variables on a new line;
         	the 's' variable above should be printed first. */
         String concat = s.concat(anotherString);
         System.out.println(concat);
+
         scan.close();
     }
 }
